@@ -12,9 +12,7 @@
 if ( ! function_exists( 'pdxtheme_scripts' ) ) :
 	function pdxtheme_scripts() {
   	// Enqueue stylesheets.
-    wp_enqueue_style( 'main-stylesheet', 'https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.2/libraries/foundation-6/css/foundation.css', array(), '1.2', 'all' );
-    wp_enqueue_style( 'ebi-stylesheet', 'https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.2/css/ebi-global.css', array(), '1.2', 'all' );
-    wp_enqueue_style( 'theme-stylesheet', 'https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.2/css/theme-embl-petrol.css', array(), '1.2', 'all' );
+    wp_enqueue_style( 'theme-stylesheet', 'https://ebiwd.github.io/pdx-visual-framework/css/app.css', array(), '1.0', 'all' );
     wp_enqueue_style( 'font-stylesheet', 'https://ebi.emblstatic.net/web_guidelines/EBI-Icon-fonts/v1.2/fonts.css', array(), '1.2', 'all' );
 
   	// Deregister the jquery version bundled with WordPress.
@@ -24,7 +22,7 @@ if ( ! function_exists( 'pdxtheme_scripts' ) ) :
   	wp_enqueue_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js', array(), '2.1.0', false );
 
     // EBI assets
-    wp_enqueue_script( 'ebiscript', 'https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.2/js/script.js', array(), '1.2', true );
+    // wp_enqueue_script( 'ebiscript', 'https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.2/js/script.js', array(), '1.2', true );
 
     wp_enqueue_script( 'foundation', 'https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.2/libraries/foundation-6/js/foundation.js', array('jquery','ebiscript'), '1.2', true );
     wp_enqueue_script( 'foundationextend', 'https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.2/js/foundationExtendEBI.js', array('jquery','ebiscript'), '1.2', true );
