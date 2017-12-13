@@ -21,14 +21,14 @@ require_once( 'library/cleanup.php' );
 require_once( 'library/foundation.php' );
 
 /** Format comments */
-require_once( 'library/class-ebiframework-comments.php' );
+require_once( 'library/class-pdxtheme-comments.php' );
 
 /** Register all navigation menus */
 require_once( 'library/navigation.php' );
 
 /** Add menu walkers for top-bar and off-canvas */
-require_once( 'library/class-ebiframework-top-bar-walker.php' );
-require_once( 'library/class-ebiframework-mobile-walker.php' );
+require_once( 'library/class-pdxtheme-top-bar-walker.php' );
+require_once( 'library/class-pdxtheme-mobile-walker.php' );
 
 /** Create widget areas in sidebar and footer */
 require_once( 'library/widget-areas.php' );
@@ -57,4 +57,4 @@ require_once( 'library/responsive-images.php' );
 // add_filter( 'the_content_more_link', 'modify_read_more_link' );
 
 /** If your site requires protocol relative url's for theme assets, uncomment the line below */
-// require_once( 'library/class-ebiframework-protocol-relative-theme-assets.php' );
+// require_once( 'library/class-pdxtheme-protocol-relative-theme-assets.php' );

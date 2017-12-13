@@ -17,24 +17,24 @@ add_image_size( 'featured-large', 1440, 400, true );
 add_image_size( 'featured-xlarge', 1920, 400, true );
 
 // Add additional image sizes
-add_image_size( 'ebiframework-small', 640 );
-add_image_size( 'ebiframework-medium', 1024 );
-add_image_size( 'ebiframework-large', 1200 );
-add_image_size( 'ebiframework-xlarge', 1920 );
+add_image_size( 'pdxtheme-small', 640 );
+add_image_size( 'pdxtheme-medium', 1024 );
+add_image_size( 'pdxtheme-large', 1200 );
+add_image_size( 'pdxtheme-xlarge', 1920 );
 
 // Register the new image sizes for use in the add media modal in wp-admin
-function ebiframework_custom_sizes( $sizes ) {
+function pdxtheme_custom_sizes( $sizes ) {
 	return array_merge( $sizes, array(
-		'ebiframework-small'  => __( 'EBI Framework Small' ),
-		'ebiframework-medium' => __( 'EBI Framework Medium' ),
-		'ebiframework-large'  => __( 'EBI Framework Large' ),
-		'ebiframework-xlarge'  => __( 'EBI Framework XLarge' ),
+		'pdxtheme-small'  => __( 'EBI Framework Small' ),
+		'pdxtheme-medium' => __( 'EBI Framework Medium' ),
+		'pdxtheme-large'  => __( 'EBI Framework Large' ),
+		'pdxtheme-xlarge'  => __( 'EBI Framework XLarge' ),
 	) );
 }
-add_filter( 'image_size_names_choose', 'ebiframework_custom_sizes' );
+add_filter( 'image_size_names_choose', 'pdxtheme_custom_sizes' );
 
 // Add custom image sizes attribute to enhance responsive image functionality for content images
-function ebiframework_adjust_image_sizes_attr( $sizes, $size ) {
+function pdxtheme_adjust_image_sizes_attr( $sizes, $size ) {
 
 	// Actual width of image
 	$width = $size[0];
@@ -56,7 +56,7 @@ function ebiframework_adjust_image_sizes_attr( $sizes, $size ) {
 
 	return $sizes;
 }
-add_filter( 'wp_calculate_image_sizes', 'ebiframework_adjust_image_sizes_attr', 10 , 2 );
+add_filter( 'wp_calculate_image_sizes', 'pdxtheme_adjust_image_sizes_attr', 10 , 2 );
 
 // Remove inline width and height attributes for post thumbnails
 function remove_thumbnail_dimensions( $html, $post_id, $post_image_id ) {

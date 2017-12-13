@@ -6,10 +6,10 @@
  * @since EBI Visual Framework 1.0.0
  */
 
-if ( ! function_exists( 'ebiframework_theme_support' ) ) :
-function ebiframework_theme_support() {
+if ( ! function_exists( 'pdxtheme_theme_support' ) ) :
+function pdxtheme_theme_support() {
 	// Add language support
-	load_theme_textdomain( 'ebiframework', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'pdxtheme', get_template_directory() . '/languages' );
 
 	// Switch default core markup for search form, comment form, and comments to output valid HTML5
 	add_theme_support( 'html5', array(
@@ -42,5 +42,5 @@ function ebiframework_theme_support() {
 	add_editor_style( 'assets/stylesheets/foundation.css' );
 }
 
-add_action( 'after_setup_theme', 'ebiframework_theme_support' );
+add_action( 'after_setup_theme', 'pdxtheme_theme_support' );
 endif;

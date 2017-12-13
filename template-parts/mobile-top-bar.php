@@ -9,5 +9,5 @@
 ?>
 
 <nav class="vertical menu" id="mobile-menu" role="navigation">
-  <?php ebiframework_mobile_nav(); ?>
+  <?php pdxtheme_mobile_nav(); ?>
 </nav>

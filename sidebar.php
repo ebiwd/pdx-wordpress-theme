@@ -8,7 +8,7 @@
 
 ?>
 <aside class="sidebar columns medium-4">
-	<?php do_action( 'ebiframework_before_sidebar' ); ?>
+	<?php do_action( 'pdxtheme_before_sidebar' ); ?>
 	<?php dynamic_sidebar( 'sidebar-widgets' ); ?>
-	<?php do_action( 'ebiframework_after_sidebar' ); ?>
+	<?php do_action( 'pdxtheme_after_sidebar' ); ?>
 </aside>

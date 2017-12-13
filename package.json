@@ -1,5 +1,5 @@
 {
-  "name": "ebiframework",
+  "name": "pdxtheme",
   "title": "EBI Visual Framework",
   "version": "2.9.0",
   "description": "EBI Visual Framework is a WordPress starter theme based on Foundation 6 by Zurb",
@@ -13,7 +13,7 @@
     "customizable",
     "responsive"
   ],
-  "homepage": "http://ebiframework.olefredrik.com/",
+  "homepage": "http://pdxtheme.olefredrik.com/",
   "bugs": "https://github.com/olefredrik/EBI Visual Framework/issues",
   "license": "MIT",
   "main": "gulpfile.js",

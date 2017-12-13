@@ -7,8 +7,8 @@
  */
 
 // Pagination.
-if ( ! function_exists( 'ebiframework_pagination' ) ) :
-function ebiframework_pagination() {
+if ( ! function_exists( 'pdxtheme_pagination' ) ) :
+function pdxtheme_pagination() {
 	global $wp_query;
 
 	$big = 999999999; // This needs to be an unlikely integer
@@ -21,8 +21,8 @@ function ebiframework_pagination() {
 		'total' => $wp_query->max_num_pages,
 		'mid_size' => 5,
 		'prev_next' => true,
-	    'prev_text' => __( '&laquo;', 'ebiframework' ),
-	    'next_text' => __( '&raquo;', 'ebiframework' ),
+	    'prev_text' => __( '&laquo;', 'pdxtheme' ),
+	    'next_text' => __( '&raquo;', 'pdxtheme' ),
 		'type' => 'list',
 	) );
 
@@ -46,17 +46,17 @@ endif;
  * A fallback when no navigation is selected by default.
  */
 
-if ( ! function_exists( 'ebiframework_menu_fallback' ) ) :
-function ebiframework_menu_fallback() {
+if ( ! function_exists( 'pdxtheme_menu_fallback' ) ) :
+function pdxtheme_menu_fallback() {
 	echo '<div class="alert-box secondary">';
 	/* translators: %1$s: link to menus, %2$s: link to customize. */
-	printf( __( 'Please assign a menu to the primary menu location under %1$s or %2$s the design.', 'ebiframework' ),
+	printf( __( 'Please assign a menu to the primary menu location under %1$s or %2$s the design.', 'pdxtheme' ),
 		/* translators: %s: menu url */
-		sprintf(  __( '<a href="%s">Menus</a>', 'ebiframework' ),
+		sprintf(  __( '<a href="%s">Menus</a>', 'pdxtheme' ),
 			get_admin_url( get_current_blog_id(), 'nav-menus.php' )
 		),
 		/* translators: %s: customize url */
-		sprintf(  __( '<a href="%s">Customize</a>', 'ebiframework' ),
+		sprintf(  __( '<a href="%s">Customize</a>', 'pdxtheme' ),
 			get_admin_url( get_current_blog_id(), 'customize.php' )
 		)
 	);
@@ -65,22 +65,22 @@ function ebiframework_menu_fallback() {
 endif;
 
 // Add Foundation 'active' class for the current menu item.
-if ( ! function_exists( 'ebiframework_active_nav_class' ) ) :
-function ebiframework_active_nav_class( $classes, $item ) {
+if ( ! function_exists( 'pdxtheme_active_nav_class' ) ) :
+function pdxtheme_active_nav_class( $classes, $item ) {
 	if ( 1 === $item->current || true === $item->current_item_ancestor ) {
 		$classes[] = 'active';
 	}
 	return $classes;
 }
-add_filter( 'nav_menu_css_class', 'ebiframework_active_nav_class', 10, 2 );
+add_filter( 'nav_menu_css_class', 'pdxtheme_active_nav_class', 10, 2 );
 endif;
 
 /**
  * Use the active class of ZURB Foundation on wp_list_pages output.
  * From required+ Foundation http://themes.required.ch.
  */
-if ( ! function_exists( 'ebiframework_active_list_pages_class' ) ) :
-function ebiframework_active_list_pages_class( $input ) {
+if ( ! function_exists( 'pdxtheme_active_list_pages_class' ) ) :
+function pdxtheme_active_list_pages_class( $input ) {
 
 	$pattern = '/current_page_item/';
 	$replace = 'current_page_item active';
@@ -89,15 +89,15 @@ function ebiframework_active_list_pages_class( $input ) {
 
 	return $output;
 }
-add_filter( 'wp_list_pages', 'ebiframework_active_list_pages_class', 10, 2 );
+add_filter( 'wp_list_pages', 'pdxtheme_active_list_pages_class', 10, 2 );
 endif;
 
 /**
  * Enable Foundation responsive embeds for WP video embeds
  */
 
-if ( ! function_exists( 'ebiframework_responsive_video_oembed_html' ) ) :
-function ebiframework_responsive_video_oembed_html( $html, $url, $attr, $post_id ) {
+if ( ! function_exists( 'pdxtheme_responsive_video_oembed_html' ) ) :
+function pdxtheme_responsive_video_oembed_html( $html, $url, $attr, $post_id ) {
 
 	// Whitelist of oEmbed compatible sites that **ONLY** support video.
 	// Cannot determine if embed is a video or not from sites that
@@ -155,5 +155,5 @@ function ebiframework_responsive_video_oembed_html( $html, $url, $attr, $post_id
 	}
 
 }
-add_filter( 'embed_oembed_html', 'ebiframework_responsive_video_oembed_html', 10, 4 );
+add_filter( 'embed_oembed_html', 'pdxtheme_responsive_video_oembed_html', 10, 4 );
 endif;

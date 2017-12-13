@@ -115,7 +115,7 @@
 .intro {
   @include grid-row();
 
-  .ebiframework-intro {
+  .pdxtheme-intro {
     @include breakpoint(small) {
       @include grid-column(12);
     }

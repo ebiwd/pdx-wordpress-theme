@@ -31,13 +31,13 @@ get_header(); ?>
 
 		<?php /* Display navigation to next/previous pages when applicable */ ?>
 		<?php
-		if ( function_exists( 'ebiframework_pagination' ) ) :
-			ebiframework_pagination();
+		if ( function_exists( 'pdxtheme_pagination' ) ) :
+			pdxtheme_pagination();
 		elseif ( is_paged() ) :
 		?>
 			<nav id="post-nav">
-				<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'ebiframework' ) ); ?></div>
-				<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'ebiframework' ) ); ?></div>
+				<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'pdxtheme' ) ); ?></div>
+				<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'pdxtheme' ) ); ?></div>
 			</nav>
 		<?php endif; ?>
 

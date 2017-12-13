@@ -55,7 +55,7 @@
     </nav>
   </header>
 
-  <?php do_action( 'ebiframework_after_body' ); ?>
+  <?php do_action( 'pdxtheme_after_body' ); ?>
 
   <?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) === 'offcanvas' ) : ?>
   <div class="off-canvas-wrapper">
@@ -63,7 +63,7 @@
     <?php get_template_part( 'template-parts/mobile-off-canvas' ); ?>
   <?php endif; ?>
 
-  <?php do_action( 'ebiframework_layout_start' ); ?>
+  <?php do_action( 'pdxtheme_layout_start' ); ?>
 
   <div data-sticky-container>
     <header id="masthead" class="masthead" data-sticky data-sticky-on="large" data-top-anchor="content:top" data-btm-anchor="content:bottom">
@@ -76,7 +76,7 @@
 
         <!-- local-nav -->
         <nav id="main-menu" class="navigation" role="navigation">
-          <?php ebiframework_top_bar_r(); ?>
+          <?php pdxtheme_top_bar_r(); ?>
           <?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) : ?>
             <?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
           <?php endif; ?>
@@ -89,4 +89,4 @@
   <div id="content" role="main" class="row">
 
     <section class="container">
-      <?php do_action( 'ebiframework_after_header' );
+      <?php do_action( 'pdxtheme_after_header' );

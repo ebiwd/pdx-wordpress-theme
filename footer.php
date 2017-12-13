@@ -14,9 +14,9 @@
     </div>
     <div id="footer-container">
       <footer id="footer">
-        <?php do_action( 'ebiframework_before_footer' ); ?>
+        <?php do_action( 'pdxtheme_before_footer' ); ?>
         <?php dynamic_sidebar( 'footer-widgets' ); ?>
-        <?php do_action( 'ebiframework_after_footer' ); ?>
+        <?php do_action( 'pdxtheme_after_footer' ); ?>
 
         <div id="global-footer" class="global-footer">
 
@@ -32,7 +32,7 @@
       </footer>
     </div>
 
-    <?php do_action( 'ebiframework_layout_end' ); ?>
+    <?php do_action( 'pdxtheme_layout_end' ); ?>
 
 <?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) === 'offcanvas' ) : ?>
     </div><!-- Close off-canvas wrapper inner -->
@@ -42,6 +42,6 @@
 
 
 <?php wp_footer(); ?>
-<?php do_action( 'ebiframework_before_closing_body' ); ?>
+<?php do_action( 'pdxtheme_before_closing_body' ); ?>
 </body>
 </html>

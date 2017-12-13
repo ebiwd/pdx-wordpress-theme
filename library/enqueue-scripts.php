@@ -9,8 +9,8 @@
  * @since EBI Visual Framework 1.0.0
  */
 
-if ( ! function_exists( 'ebiframework_scripts' ) ) :
-	function ebiframework_scripts() {
+if ( ! function_exists( 'pdxtheme_scripts' ) ) :
+	function pdxtheme_scripts() {
   	// Enqueue stylesheets.
     wp_enqueue_style( 'main-stylesheet', 'https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.2/libraries/foundation-6/css/foundation.css', array(), '1.2', 'all' );
     wp_enqueue_style( 'ebi-stylesheet', 'https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.2/css/ebi-global.css', array(), '1.2', 'all' );
@@ -42,5 +42,5 @@ if ( ! function_exists( 'ebiframework_scripts' ) ) :
 
 	}
 
-	add_action( 'wp_enqueue_scripts', 'ebiframework_scripts' );
+	add_action( 'wp_enqueue_scripts', 'pdxtheme_scripts' );
 endif;

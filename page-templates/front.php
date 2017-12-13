@@ -9,12 +9,12 @@ get_header(); ?>
 		<div class="tagline">
 			<h2><?php bloginfo( 'name' ); ?></h2>
 			<h4 class="subheader"><?php bloginfo( 'description' ); ?></h4>
-			<a role="button" class="download large button sites-button hide-for-small-only" href="https://github.com/olefredrik/ebiframework">Download EBI Visual Framework</a>
+			<a role="button" class="download large button sites-button hide-for-small-only" href="https://github.com/olefredrik/pdxtheme">Download EBI Visual Framework</a>
 		</div>
 
 		<div id="watch">
 			<section id="stargazers">
-				<a href="https://github.com/olefredrik/ebiframework">1.5k stargazers</a>
+				<a href="https://github.com/olefredrik/pdxtheme">1.5k stargazers</a>
 			</section>
 			<section id="twitter">
 				<a href="https://twitter.com/olefredrik">@olefredrik</a>
@@ -24,13 +24,13 @@ get_header(); ?>
 
 </header>
 
-<?php do_action( 'ebiframework_before_content' ); ?>
+<?php do_action( 'pdxtheme_before_content' ); ?>
 <?php while ( have_posts() ) : the_post(); ?>
 <section class="intro" role="main">
-	<div class="ebiframework-intro">
+	<div class="pdxtheme-intro">
 
 		<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
-			<?php do_action( 'ebiframework_page_before_entry_content' ); ?>
+			<?php do_action( 'pdxtheme_page_before_entry_content' ); ?>
 			<div class="entry-content">
 				<?php the_content(); ?>
 			</div>
@@ -38,23 +38,23 @@ get_header(); ?>
 				<?php
 					wp_link_pages(
 						array(
-							'before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'ebiframework' ),
+							'before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'pdxtheme' ),
 							'after'  => '</p></nav>',
 						)
 					);
 				?>
 				<p><?php the_tags(); ?></p>
 			</footer>
-			<?php do_action( 'ebiframework_page_before_comments' ); ?>
+			<?php do_action( 'pdxtheme_page_before_comments' ); ?>
 			<?php comments_template(); ?>
-			<?php do_action( 'ebiframework_page_after_comments' ); ?>
+			<?php do_action( 'pdxtheme_page_after_comments' ); ?>
 		</div>
 
 	</div>
 
 </section>
 <?php endwhile;?>
-<?php do_action( 'ebiframework_after_content' ); ?>
+<?php do_action( 'pdxtheme_after_content' ); ?>
 
 <div class="section-divider">
 	<hr />

@@ -1,5 +1,5 @@
 {
-  "name": "ebiframework",
+  "name": "pdxtheme",
   "main": [
     "assets/stylesheets/foundation.css",
     "assets/javascript/foundation.js"

@@ -10,11 +10,11 @@ get_header(); ?>
 
 <div id="page" role="main">
 
-<?php do_action( 'ebiframework_before_content' ); ?>
+<?php do_action( 'pdxtheme_before_content' ); ?>
 
 <article <?php post_class('main-content') ?> id="search-results">
 	<header>
-	    <h1 class="entry-title"><?php _e( 'Search Results for', 'ebiframework' ); ?> "<?php echo get_search_query(); ?>"</h1>
+	    <h1 class="entry-title"><?php _e( 'Search Results for', 'pdxtheme' ); ?> "<?php echo get_search_query(); ?>"</h1>
 	</header>
 
 	<?php if ( have_posts() ) : ?>
@@ -28,23 +28,23 @@ get_header(); ?>
 
 	<?php endif; ?>
 
-	<?php do_action( 'ebiframework_before_pagination' ); ?>
+	<?php do_action( 'pdxtheme_before_pagination' ); ?>
 
 	<?php
-	if ( function_exists( 'ebiframework_pagination' ) ) :
-		ebiframework_pagination();
+	if ( function_exists( 'pdxtheme_pagination' ) ) :
+		pdxtheme_pagination();
 	elseif ( is_paged() ) :
 	?>
 
 		<nav id="post-nav">
-			<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'ebiframework' ) ); ?></div>
-			<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'ebiframework' ) ); ?></div>
+			<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'pdxtheme' ) ); ?></div>
+			<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'pdxtheme' ) ); ?></div>
 		</nav>
 	<?php endif; ?>
 
 </article>
 
-<?php do_action( 'ebiframework_after_content' ); ?>
+<?php do_action( 'pdxtheme_after_content' ); ?>
 <?php get_sidebar(); ?>
 
 </div>

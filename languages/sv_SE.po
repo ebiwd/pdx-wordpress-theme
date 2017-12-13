@@ -238,8 +238,8 @@ msgid "EBI Visual Framework"
 msgstr "EBI Visual Framework"
 
 #. Theme URI of the plugin/theme
-msgid "http://ebiframework.olefredrik.com"
-msgstr "http://ebiframework.olefredrik.com"
+msgid "http://pdxtheme.olefredrik.com"
+msgstr "http://pdxtheme.olefredrik.com"
 
 #. Description of the plugin/theme
 msgid ""

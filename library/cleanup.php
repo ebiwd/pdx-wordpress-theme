@@ -6,34 +6,34 @@
  * @since EBI Visual Framework 1.0.0
  */
 
-if ( ! function_exists( 'ebiframework_start_cleanup' ) ) :
-function ebiframework_start_cleanup() {
+if ( ! function_exists( 'pdxtheme_start_cleanup' ) ) :
+function pdxtheme_start_cleanup() {
 
 	// Launching operation cleanup.
-	add_action( 'init', 'ebiframework_cleanup_head' );
+	add_action( 'init', 'pdxtheme_cleanup_head' );
 
 	// Remove WP version from RSS.
-	add_filter( 'the_generator', 'ebiframework_remove_rss_version' );
+	add_filter( 'the_generator', 'pdxtheme_remove_rss_version' );
 
 	// Remove pesky injected css for recent comments widget.
-	add_filter( 'wp_head', 'ebiframework_remove_wp_widget_recent_comments_style', 1 );
+	add_filter( 'wp_head', 'pdxtheme_remove_wp_widget_recent_comments_style', 1 );
 
 	// Clean up comment styles in the head.
-	add_action( 'wp_head', 'ebiframework_remove_recent_comments_style', 1 );
+	add_action( 'wp_head', 'pdxtheme_remove_recent_comments_style', 1 );
 
 	// Remove inline width attribute from figure tag
-	add_filter( 'img_caption_shortcode', 'ebiframework_remove_figure_inline_style', 10, 3 );
+	add_filter( 'img_caption_shortcode', 'pdxtheme_remove_figure_inline_style', 10, 3 );
 
 }
-add_action( 'after_setup_theme','ebiframework_start_cleanup' );
+add_action( 'after_setup_theme','pdxtheme_start_cleanup' );
 endif;
 /**
  * Clean up head.+
  * ----------------------------------------------------------------------------
  */
 
-if ( ! function_exists( 'ebiframework_cleanup_head' ) ) :
-function ebiframework_cleanup_head() {
+if ( ! function_exists( 'pdxtheme_cleanup_head' ) ) :
+function pdxtheme_cleanup_head() {
 
 	// EditURI link.
 	remove_action( 'wp_head', 'rsd_link' );
@@ -77,13 +77,13 @@ function ebiframework_cleanup_head() {
 endif;
 
 // Remove WP version from RSS.
-if ( ! function_exists( 'ebiframework_remove_rss_version' ) ) :
-function ebiframework_remove_rss_version() { return ''; }
+if ( ! function_exists( 'pdxtheme_remove_rss_version' ) ) :
+function pdxtheme_remove_rss_version() { return ''; }
 endif;
 
 // Remove injected CSS for recent comments widget.
-if ( ! function_exists( 'ebiframework_remove_wp_widget_recent_comments_style' ) ) :
-function ebiframework_remove_wp_widget_recent_comments_style() {
+if ( ! function_exists( 'pdxtheme_remove_wp_widget_recent_comments_style' ) ) :
+function pdxtheme_remove_wp_widget_recent_comments_style() {
 	if ( has_filter( 'wp_head', 'wp_widget_recent_comments_style' ) ) {
 	  remove_filter( 'wp_head', 'wp_widget_recent_comments_style' );
 	}
@@ -91,8 +91,8 @@ function ebiframework_remove_wp_widget_recent_comments_style() {
 endif;
 
 // Remove injected CSS from recent comments widget.
-if ( ! function_exists( 'ebiframework_remove_recent_comments_style' ) ) :
-function ebiframework_remove_recent_comments_style() {
+if ( ! function_exists( 'pdxtheme_remove_recent_comments_style' ) ) :
+function pdxtheme_remove_recent_comments_style() {
 	global $wp_widget_factory;
 	if ( isset($wp_widget_factory->widgets['WP_Widget_Recent_Comments']) ) {
 	remove_action( 'wp_head', array($wp_widget_factory->widgets['WP_Widget_Recent_Comments'], 'recent_comments_style') );
@@ -101,8 +101,8 @@ function ebiframework_remove_recent_comments_style() {
 endif;
 
 // Remove inline width attribute from figure tag causing images wider than 100% of its conainer
-if ( ! function_exists( 'ebiframework_remove_figure_inline_style' ) ) :
-function ebiframework_remove_figure_inline_style( $output, $attr, $content ) {
+if ( ! function_exists( 'pdxtheme_remove_figure_inline_style' ) ) :
+function pdxtheme_remove_figure_inline_style( $output, $attr, $content ) {
 	$atts = shortcode_atts( array(
 		'id'	  => '',
 		'align'	  => 'alignnone',
@@ -132,6 +132,6 @@ endif;
 
 // Add WooCommerce support for wrappers per http://docs.woothemes.com/document/third-party-custom-theme-compatibility/
 remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
-add_action('woocommerce_before_main_content', 'ebiframework_before_content', 10);
+add_action('woocommerce_before_main_content', 'pdxtheme_before_content', 10);
 remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
-add_action('woocommerce_after_main_content', 'ebiframework_after_content', 10);
+add_action('woocommerce_after_main_content', 'pdxtheme_after_content', 10);

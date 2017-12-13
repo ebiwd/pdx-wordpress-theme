@@ -23,7 +23,7 @@ if ( have_comments() ) :
 				'callback'          => null,
 				'end-callback'      => null,
 				'type'              => 'all',
-				'reply_text'        => __( 'Reply', 'ebiframework' ),
+				'reply_text'        => __( 'Reply', 'pdxtheme' ),
 				'page'              => '',
 				'per_page'          => '',
 				'avatar_size'       => 48,
@@ -32,7 +32,7 @@ if ( have_comments() ) :
 				'format'            => 'html5',
 				'short_ping'        => false,
 				'echo'  	    => true,
-				'moderation' 	    => __( 'Your comment is awaiting moderation.', 'ebiframework' ),
+				'moderation' 	    => __( 'Your comment is awaiting moderation.', 'pdxtheme' ),
 			)
 		);
 
@@ -51,12 +51,12 @@ endif;
 	Prevent access to this file directly
 	*/
 
-	defined( 'ABSPATH' ) || die( __( 'Please do not load this page directly. Thanks!', 'ebiframework' ) );
+	defined( 'ABSPATH' ) || die( __( 'Please do not load this page directly. Thanks!', 'pdxtheme' ) );
 
 	if ( post_password_required() ) { ?>
 	<section id="comments">
 		<div class="notice">
-			<p class="bottom"><?php _e( 'This post is password protected. Enter the password to view comments.', 'ebiframework' ); ?></p>
+			<p class="bottom"><?php _e( 'This post is password protected. Enter the password to view comments.', 'pdxtheme' ); ?></p>
 		</div>
 	</section>
 	<?php
@@ -72,9 +72,9 @@ if ( comments_open() ) :
 	<h3>
 		<?php
 			comment_form_title(
-				__( 'Leave a Reply', 'ebiframework' ),
+				__( 'Leave a Reply', 'pdxtheme' ),
 				/* translators: %s: author of comment being replied to */
-				__( 'Leave a Reply to %s', 'ebiframework' )
+				__( 'Leave a Reply to %s', 'pdxtheme' )
 			);
 		?>
 	</h3>
@@ -84,7 +84,7 @@ if ( comments_open() ) :
 		<?php
 			/* translators: %s: login url */
 			printf( __(
-				'You must be <a href="%s">logged in</a> to post a comment.', 'ebiframework' ),
+				'You must be <a href="%s">logged in</a> to post a comment.', 'pdxtheme' ),
 				wp_login_url( get_permalink() )
 			);
 		?>
@@ -96,17 +96,17 @@ if ( comments_open() ) :
 			<?php
 				/* translators: %1$s: site url, %2$s: user identity  */
 				printf( __(
-					'Logged in as <a href="%1$s/wp-admin/profile.php">%2$s</a>.', 'ebiframework' ),
+					'Logged in as <a href="%1$s/wp-admin/profile.php">%2$s</a>.', 'pdxtheme' ),
 					get_option( 'siteurl' ),
 					$user_identity
 				);
-			?> <a href="<?php echo wp_logout_url( get_permalink() ); ?>" title="<?php __( 'Log out of this account', 'ebiframework' ); ?>"><?php _e( 'Log out &raquo;', 'ebiframework' ); ?></a>
+			?> <a href="<?php echo wp_logout_url( get_permalink() ); ?>" title="<?php __( 'Log out of this account', 'pdxtheme' ); ?>"><?php _e( 'Log out &raquo;', 'pdxtheme' ); ?></a>
 		</p>
 		<?php else : ?>
 		<p>
 			<label for="author">
 				<?php
-					_e( 'Name', 'ebiframework' ); if ( $req ) { _e( ' (required)', 'ebiframework' ); }
+					_e( 'Name', 'pdxtheme' ); if ( $req ) { _e( ' (required)', 'pdxtheme' ); }
 				?>
 			</label>
 			<input type="text" class="five" name="author" id="author" value="<?php echo esc_attr( $comment_author ); ?>" size="22" tabindex="1" <?php if ( $req ) { echo "aria-required='true'"; } ?>>
@@ -114,7 +114,7 @@ if ( comments_open() ) :
 		<p>
 			<label for="email">
 				<?php
-					_e( 'Email (will not be published)', 'ebiframework' ); if ( $req ) { _e( ' (required)', 'ebiframework' ); }
+					_e( 'Email (will not be published)', 'pdxtheme' ); if ( $req ) { _e( ' (required)', 'pdxtheme' ); }
 				?>
 			</label>
 			<input type="text" class="five" name="email" id="email" value="<?php echo esc_attr( $comment_author_email ); ?>" size="22" tabindex="2" <?php if ( $req ) { echo "aria-required='true'"; } ?>>
@@ -122,7 +122,7 @@ if ( comments_open() ) :
 		<p>
 			<label for="url">
 				<?php
-					_e( 'Website', 'ebiframework' );
+					_e( 'Website', 'pdxtheme' );
 				?>
 			</label>
 			<input type="text" class="five" name="url" id="url" value="<?php echo esc_attr( $comment_author_url ); ?>" size="22" tabindex="3">
@@ -131,20 +131,20 @@ if ( comments_open() ) :
 		<p>
 			<label for="comment">
 					<?php
-						_e( 'Comment', 'ebiframework' );
+						_e( 'Comment', 'pdxtheme' );
 					?>
 			</label>
 			<textarea name="comment" id="comment" tabindex="4"></textarea>
 		</p>
 		<p id="allowed_tags" class="small"><strong>XHTML:</strong>
 			<?php
-				_e( 'You can use these tags:','ebiframework' );
+				_e( 'You can use these tags:','pdxtheme' );
 			?>
 			<code>
 				<?php echo allowed_tags(); ?>
 			</code>
 		</p>
-		<p><input name="submit" class="button" type="submit" id="submit" tabindex="5" value="<?php esc_attr_e( 'Submit Comment', 'ebiframework' ); ?>"></p>
+		<p><input name="submit" class="button" type="submit" id="submit" tabindex="5" value="<?php esc_attr_e( 'Submit Comment', 'pdxtheme' ); ?>"></p>
 		<?php comment_id_fields(); ?>
 		<?php do_action( 'comment_form', $post->ID ); ?>
 	</form>

@@ -13,13 +13,13 @@ function wpt_register_theme_customizer( $wp_customize ) {
 	$wp_customize->add_panel( 'mobile_menu_settings', array(
 	  'priority' => 1000,
 	  'theme_supports' => '',
-	  'title' => __( 'Mobile Menu Settings', 'ebiframework' ),
-	  'description' => __( 'Controls the mobile menu', 'ebiframework' ),
+	  'title' => __( 'Mobile Menu Settings', 'pdxtheme' ),
+	  'description' => __( 'Controls the mobile menu', 'pdxtheme' ),
 	) );
 
 	// Create custom field for mobile navigation layout
 	$wp_customize->add_section( 'mobile_menu_layout' , array(
-		'title'	=> __('Mobile navigation layout','ebiframework'),
+		'title'	=> __('Mobile navigation layout','pdxtheme'),
 		'panel' => 'mobile_menu_settings',
 		'priority' => 1000,
 	));
@@ -28,7 +28,7 @@ function wpt_register_theme_customizer( $wp_customize ) {
 	$wp_customize->add_setting(
 		'wpt_mobile_menu_layout',
 		array(
-			'default'	=> __( 'topbar', 'ebiframework' ),
+			'default'	=> __( 'topbar', 'pdxtheme' ),
 		)
 	);
 

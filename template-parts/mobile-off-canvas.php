@@ -9,7 +9,7 @@
 ?>
 
 <nav class="off-canvas position-left" id="mobile-menu" data-off-canvas data-auto-focus="false" data-position="left" role="navigation">
-  <?php ebiframework_mobile_nav(); ?>
+  <?php pdxtheme_mobile_nav(); ?>
 </nav>
 
 <div class="off-canvas-content" data-off-canvas-content>
