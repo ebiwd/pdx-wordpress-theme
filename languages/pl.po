@@ -183,8 +183,8 @@ msgstr ""
 
 #. /archive/search.
 #. *
-#. * @subpackage EBI Visual Framework
-#. * @since EBI Visual Framework 1.0.0
+#. * @subpackage PDX Theme
+#. * @since PDX Theme 1.0.0
 #.
 #: content.php:16
 msgid "Continue reading..."

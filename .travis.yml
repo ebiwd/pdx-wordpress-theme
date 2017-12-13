@@ -1,7 +1,7 @@
-# Travis CI (MIT License) configuration file for the EBI Visual Framework WordPress theme.
+# Travis CI (MIT License) configuration file for the PDX Theme WordPress theme.
 # @link https://travis-ci.org/
 
-# For use with the EBI Visual Framework WordPress theme.
+# For use with the PDX Theme WordPress theme.
 # @link https://github.com/olefredrik/pdxtheme
 
 # Declare project language.

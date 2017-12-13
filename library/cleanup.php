@@ -2,8 +2,8 @@
 /**
  * Clean up WordPress defaults
  *
- * @package EBI Visual Framework
- * @since EBI Visual Framework 1.0.0
+ * @package PDX Theme
+ * @since PDX Theme 1.0.0
  */
 
 if ( ! function_exists( 'pdxtheme_start_cleanup' ) ) :

@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: EBI Visual Framework\n"
+"Project-Id-Version: PDX Theme\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-09-13 17:56+0200\n"
 "PO-Revision-Date: 2016-10-16 10:05+0200\n"
@@ -189,8 +189,8 @@ msgstr ""
 
 #. /archive/search.
 #. *
-#. * @subpackage EBI Visual Framework
-#. * @since EBI Visual Framework 1.0.0
+#. * @subpackage PDX Theme
+#. * @since PDX Theme 1.0.0
 #.
 #: content.php:16
 msgid "Continue reading..."

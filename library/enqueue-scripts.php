@@ -5,8 +5,8 @@
  * Learn more about enqueue_script: {@link https://codex.wordpress.org/Function_Reference/wp_enqueue_script}
  * Learn more about enqueue_style: {@link https://codex.wordpress.org/Function_Reference/wp_enqueue_style }
  *
- * @package EBI Visual Framework
- * @since EBI Visual Framework 1.0.0
+ * @package PDX Theme
+ * @since PDX Theme 1.0.0
  */
 
 if ( ! function_exists( 'pdxtheme_scripts' ) ) :

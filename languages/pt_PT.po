@@ -217,16 +217,16 @@ msgid "Page"
 msgstr "Página"
 
 #: library/responsive-images.php:19
-msgid "EBI Framework Small"
-msgstr "EBI Framework Pequena"
+msgid "PDX Theme Small"
+msgstr "PDX Theme Pequena"
 
 #: library/responsive-images.php:20
-msgid "EBI Framework Medium"
-msgstr "EBI Framework Média"
+msgid "PDX Theme Medium"
+msgstr "PDX Theme Média"
 
 #: library/responsive-images.php:21
-msgid "EBI Framework Large"
-msgstr "EBI Framework Grande"
+msgid "PDX Theme Large"
+msgstr "PDX Theme Grande"
 
 #: library/widget-areas.php:13
 msgid "Sidebar widgets"

@@ -1,8 +1,8 @@
 <?php
 /**
- * EBI Visual Framework Comments
+ * PDX Theme Comments
  *
- * @package EBI Visual Framework
+ * @package PDX Theme
  */
 
 if ( ! class_exists( 'Foundationpress_Comments' ) ) :

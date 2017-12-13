@@ -1,4 +1,4 @@
-<!-- Please only file bugs with EBI Visual Framework on GitHub. If you've got an issue with the Foundation framework itself, please file the bug in the Foundation repository: https://github.com/zurb/foundation-sites. If you've got a more general question about how to use EBI Visual Framework, please use the Gitter chatroom: https://gitter.im/olefredrik/EBI Visual Framework -->
+<!-- Please only file bugs with PDX Theme on GitHub. If you've got an issue with the Foundation framework itself, please file the bug in the Foundation repository: https://github.com/zurb/foundation-sites. If you've got a more general question about how to use PDX Theme, please use the Gitter chatroom: https://gitter.im/olefredrik/PDX Theme -->
 
 **How can this bug be reproduced?**
 

@@ -4,8 +4,8 @@
  *
  * Displays all of the head element and everything up until the "container" div.
  *
- * @package EBI Visual Framework
- * @since EBI Visual Framework 1.0.0
+ * @package PDX Theme
+ * @since PDX Theme 1.0.0
  */
 
 ?>

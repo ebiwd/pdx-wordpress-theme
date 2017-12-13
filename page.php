@@ -6,8 +6,8 @@
  * Please note that this is the WordPress construct of pages and that
  * other "pages" on your WordPress site will use a different template.
  *
- * @package EBI Visual Framework
- * @since EBI Visual Framework 1.0.0
+ * @package PDX Theme
+ * @since PDX Theme 1.0.0
  */
 
  get_header(); ?>

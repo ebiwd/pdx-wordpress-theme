@@ -1,4 +1,4 @@
-# Romanian translation for EBI Visual Framework.
+# Romanian translation for PDX Theme.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Alex Bohariuc <alex.bohariuc@gmail.com>, 2015.
@@ -189,8 +189,8 @@ msgstr "Nu am găsit ceea ce căutai. Folosește formularul de căutare."
 
 #. /archive/search.
 #. *
-#. * @subpackage EBI Visual Framework
-#. * @since EBI Visual Framework 1.0.0
+#. * @subpackage PDX Theme
+#. * @since PDX Theme 1.0.0
 #.
 #: content.php:16
 msgid "Continue reading..."

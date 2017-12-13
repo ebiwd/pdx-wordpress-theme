@@ -822,7 +822,7 @@ get_header(); ?>
 						<div class="title-bar">
 						  <div class="title-bar-left">
 						    <button class="menu-icon" type="button"></button>
-						    <span class="title-bar-title">EBI Visual Framework</span>
+						    <span class="title-bar-title">PDX Theme</span>
 						  </div>
 						  <div class="title-bar-right">
 						    <button class="menu-icon" type="button"></button>

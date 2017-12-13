@@ -3,8 +3,8 @@
  * Register Menus
  *
  * @link http://codex.wordpress.org/Function_Reference/register_nav_menus#Examples
- * @package EBI Visual Framework
- * @since EBI Visual Framework 1.0.0
+ * @package PDX Theme
+ * @since PDX Theme 1.0.0
  */
 
 register_nav_menus(array(

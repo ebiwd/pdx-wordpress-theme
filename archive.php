@@ -11,8 +11,8 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package EBI Visual Framework
- * @since EBI Visual Framework 1.0.0
+ * @package PDX Theme
+ * @since PDX Theme 1.0.0
  */
 
 get_header(); ?>

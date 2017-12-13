@@ -2,8 +2,8 @@
 /**
  * The template for displaying all single posts and attachments
  *
- * @package EBI Visual Framework
- * @since EBI Visual Framework 1.0.0
+ * @package PDX Theme
+ * @since PDX Theme 1.0.0
  */
 
 get_header(); ?>

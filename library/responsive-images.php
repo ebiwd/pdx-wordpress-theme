@@ -3,8 +3,8 @@
  * Configure responsive images sizes
  *
  * @package WordPress
- * @subpackage EBI Visual Framework
- * @since EBI Visual Framework 2.6.0
+ * @subpackage PDX Theme
+ * @since PDX Theme 2.6.0
  */
 
 // Add featured image sizes
@@ -25,10 +25,10 @@ add_image_size( 'pdxtheme-xlarge', 1920 );
 // Register the new image sizes for use in the add media modal in wp-admin
 function pdxtheme_custom_sizes( $sizes ) {
 	return array_merge( $sizes, array(
-		'pdxtheme-small'  => __( 'EBI Framework Small' ),
-		'pdxtheme-medium' => __( 'EBI Framework Medium' ),
-		'pdxtheme-large'  => __( 'EBI Framework Large' ),
-		'pdxtheme-xlarge'  => __( 'EBI Framework XLarge' ),
+		'pdxtheme-small'  => __( 'PDX Theme Small' ),
+		'pdxtheme-medium' => __( 'PDX Theme Medium' ),
+		'pdxtheme-large'  => __( 'PDX Theme Large' ),
+		'pdxtheme-xlarge'  => __( 'PDX Theme XLarge' ),
 	) );
 }
 add_filter( 'image_size_names_choose', 'pdxtheme_custom_sizes' );

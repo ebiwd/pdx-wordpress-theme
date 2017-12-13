@@ -1,10 +1,10 @@
 {
   "name": "pdxtheme",
-  "title": "EBI Visual Framework",
+  "title": "PDX Theme",
   "version": "2.9.0",
-  "description": "EBI Visual Framework is a WordPress starter theme based on Foundation 6 by Zurb",
+  "description": "PDX Theme is a WordPress starter theme based on Foundation 6 by Zurb",
   "keywords": [
-    "EBI Visual Framework",
+    "PDX Theme",
     "WordPress",
     "starter theme",
     "Foundation",
@@ -14,12 +14,12 @@
     "responsive"
   ],
   "homepage": "http://pdxtheme.olefredrik.com/",
-  "bugs": "https://github.com/olefredrik/EBI Visual Framework/issues",
+  "bugs": "https://github.com/olefredrik/PDX Theme/issues",
   "license": "MIT",
   "main": "gulpfile.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/olefredrik/EBI Visual Framework.git"
+    "url": "https://github.com/olefredrik/PDX Theme.git"
   },
   "devDependencies": {
     "autoprefixer": "^6.1.0",

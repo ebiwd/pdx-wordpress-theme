@@ -2,8 +2,8 @@
 /**
  * Protocol Relative Theme Assets
  *
- * @package EBI Visual Framework
- * @since EBI Visual Framework 1.1.0
+ * @package PDX Theme
+ * @since PDX Theme 1.1.0
  */
 
 if ( ! class_exists( 'Foundationpress_Protocol_Relative_Theme_Assets' ) ) :

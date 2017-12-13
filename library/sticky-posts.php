@@ -2,8 +2,8 @@
 /**
  * Change the class for sticky posts to .wp-sticky to avoid conflicts with Foundation's Sticky plugin
  *
- * @package EBI Visual Framework
- * @since EBI Visual Framework 2.2.0
+ * @package PDX Theme
+ * @since PDX Theme 2.2.0
  */
 
 if ( ! function_exists( 'pdxtheme_sticky_posts' ) ) :

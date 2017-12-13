@@ -9,7 +9,7 @@ get_header(); ?>
 		<div class="tagline">
 			<h2><?php bloginfo( 'name' ); ?></h2>
 			<h4 class="subheader"><?php bloginfo( 'description' ); ?></h4>
-			<a role="button" class="download large button sites-button hide-for-small-only" href="https://github.com/olefredrik/pdxtheme">Download EBI Visual Framework</a>
+			<a role="button" class="download large button sites-button hide-for-small-only" href="https://github.com/olefredrik/pdxtheme">Download PDX Theme</a>
 		</div>
 
 		<div id="watch">

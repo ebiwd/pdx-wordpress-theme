@@ -1,6 +1,6 @@
 {
     "name": "ebiwd/pdxtheme",
-    "description": "EBI Visual Framework is a WordPress starter theme based on Foundation 6 by Zurb",
+    "description": "PDX Theme is a WordPress starter theme based on Foundation 6 by Zurb",
     "type": "wordpress-theme",
     "minimum-stability" : "dev",
     "license": "MIT",

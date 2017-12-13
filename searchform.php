@@ -2,8 +2,8 @@
 /**
  * The template for displaying search form
  *
- * @package EBI Visual Framework
- * @since EBI Visual Framework 1.0.0
+ * @package PDX Theme
+ * @since PDX Theme 1.0.0
  */
 
 do_action( 'pdxtheme_before_searchform' ); ?>

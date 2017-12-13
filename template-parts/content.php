@@ -4,8 +4,8 @@
  *
  * Used for both single and index/archive/search.
  *
- * @package EBI Visual Framework
- * @since EBI Visual Framework 1.0.0
+ * @package PDX Theme
+ * @since PDX Theme 1.0.0
  */
 
 ?>

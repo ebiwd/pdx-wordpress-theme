@@ -216,16 +216,16 @@ msgid "Page"
 msgstr "Stránka"
 
 #: library/responsive-images.php:19
-msgid "EBI Framework Small"
-msgstr "EBI Framework malý"
+msgid "PDX Theme Small"
+msgstr "PDX Theme malý"
 
 #: library/responsive-images.php:20
-msgid "EBI Framework Medium"
-msgstr "EBI Framework střední"
+msgid "PDX Theme Medium"
+msgstr "PDX Theme střední"
 
 #: library/responsive-images.php:21
-msgid "EBI Framework Large"
-msgstr "EBI Framework velký"
+msgid "PDX Theme Large"
+msgstr "PDX Theme velký"
 
 #: library/widget-areas.php:13
 msgid "Sidebar widgets"
