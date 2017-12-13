@@ -1,4 +1,4 @@
-<!-- Please only file bugs with PDX Theme on GitHub. If you've got an issue with the Foundation framework itself, please file the bug in the Foundation repository: https://github.com/zurb/foundation-sites. If you've got a more general question about how to use PDX Theme, please use the Gitter chatroom: https://gitter.im/olefredrik/PDX Theme -->
+<!-- If you've got an issue with the Foundation framework itself, please file the bug in the Foundation repository: https://github.com/zurb/foundation-sites. -->
 
 **How can this bug be reproduced?**
 
@@ -11,9 +11,8 @@
 **What happened instead?**
 
 **Please List the Following:**
-* OS & version:
-* Node version (node -v) [Node v4+ is required] :
-* Foundation version (bower list) :
+* Browser version
+* OS version
 
 **Include Test Case** (if applicable):  
 Give us a link to a CodePen or JSFiddle that recreates the issue.
