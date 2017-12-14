@@ -24,8 +24,8 @@ if ( ! function_exists( 'pdxtheme_scripts' ) ) :
     // EBI assets
     // wp_enqueue_script( 'ebiscript', 'https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.2/js/script.js', array(), '1.2', true );
 
-    wp_enqueue_script( 'foundation', 'https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.2/libraries/foundation-6/js/foundation.js', array('jquery','ebiscript'), '1.2', true );
-    wp_enqueue_script( 'foundationextend', 'https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.2/js/foundationExtendEBI.js', array('jquery','ebiscript'), '1.2', true );
+    wp_enqueue_script( 'foundation', 'https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.2/libraries/foundation-6/js/foundation.js', array('jquery'), '1.2', true );
+    wp_enqueue_script( 'foundationextend', 'https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.2/js/foundationExtendEBI.js', array('jquery','foundation'), '1.2', true );
     // wp_enqueue_script( 'foundationexecute', get_template_directory_uri() . '/assets/javascript/custom/init-foundation.js', array('jquery','ebiscript'), '1.2', true );
 
     wp_add_inline_script( 'foundation', 'jQuery(document).foundation();' );
