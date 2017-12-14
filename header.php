@@ -45,6 +45,32 @@
 
   <?php do_action( 'pdxtheme_layout_start' ); ?>
 
+
+
+  <div data-sticky-container>
+    <header id="masthead" class="masthead" data-sticky data-options="marginTop: 0">
+      <div class="masthead-inner row">
+        <div class="columns medium-2 small-4 log-column" id="local-title">
+          <h1><a href="index.html" title="Back to [service-name] homepage"><img src="images/logo.png" class="padding-15"/></a></h1>
+        </div>
+        <!-- Desktop Menu-->
+        <div class="columns medium-10 menu-column padding-vertical-30 hide-for-small-only" id="local-nav">
+          <nav id="main-menu" class="navigation" role="navigation">
+            <?php pdxtheme_top_bar_r(); ?>
+            <?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) : ?>
+              <?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
+            <?php endif; ?>
+          </nav>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="columns small-4 show-for-small-only padding-vertical-15 text-right">
+          <a class="menu-toggle"><i class="icon icon-functional" data-icon="M" data-toggle data-responsive-toggle="expand-menu"></i></a>
+        </div>
+      </div>
+    </header>
+  </div>
+
+
   <div data-sticky-container>
     <header id="masthead" class="masthead" data-sticky data-sticky-on="large" data-top-anchor="content:top" data-btm-anchor="content:bottom">
       <div class="masthead-inner row">
@@ -56,14 +82,6 @@
         </div>
         <!-- /local-title -->
 
-        <!-- local-nav -->
-        <nav id="main-menu" class="navigation" role="navigation">
-          <?php pdxtheme_top_bar_r(); ?>
-          <?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) : ?>
-            <?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
-          <?php endif; ?>
-        </nav>
-        <!-- /local-nav -->
       </div>
     </header>
   </div>
