@@ -17,7 +17,7 @@ get_header(); ?>
   <article <?php post_class('main-content') ?> id="post-<?php the_ID(); ?>">
     <?php do_action( 'pdxtheme_page_before_entry_content' ); ?>
     <div class="entry-content">
-        <?php get_the_content(); ?>
+        <?php print get_the_content(); ?>
     </div>
     <footer>
         <?php
