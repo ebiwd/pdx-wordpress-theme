@@ -26,6 +26,7 @@
     </div><!-- Close off-canvas wrapper inner -->
   </div><!-- Close off-canvas wrapper -->
 </div><!-- Close off-canvas content wrapper -->
+</div><!-- Close content wrapper -->
 <?php endif; ?>
 
 
