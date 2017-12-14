@@ -57,9 +57,15 @@
         <div class="columns medium-10 menu-column padding-vertical-30 hide-for-small-only" id="local-nav">
           <nav id="main-menu" class="navigation" role="navigation">
             <?php pdxtheme_top_bar_r(); ?>
-            <?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) : ?>
-              <?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
-            <?php endif; ?>
+            <?php
+            //if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) :
+            ?>
+              <?php
+              //get_template_part( 'template-parts/mobile-top-bar' );
+              ?>
+            <?php
+          // endif;
+          ?>
           </nav>
         </div>
         <!-- Mobile Menu -->
