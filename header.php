@@ -50,7 +50,9 @@
       <div class="masthead-inner row">
         <!-- local-title -->
         <div class="columns medium-12" id="local-title">
-          <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+          <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" alt="Back to the <?php bloginfo( 'name' ); ?> homepage" rel="home">
+            <img src="https://ebiwd.github.io/pdx-visual-framework/images/logo.png" class="logo" />
+          </a></h1>
         </div>
         <!-- /local-title -->
 
@@ -66,7 +68,7 @@
     </header>
   </div>
 
-  <div id="content" role="main" class="row">
+  <div id="content" role="main">
 
     <section class="container">
       <?php do_action( 'pdxtheme_after_header' );

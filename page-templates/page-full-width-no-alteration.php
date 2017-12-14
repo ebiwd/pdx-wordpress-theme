@@ -1,7 +1,10 @@
 <?php
 /*
 Template Name: Full Width No Alteration
+*/
+/*
 Why: Create a page where the HTML input isn't altered (such as javascipt wrapped in p tags)
+How: use get_the_content() instead of the_content()
 */
 get_header(); ?>
 
