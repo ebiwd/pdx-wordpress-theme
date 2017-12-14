@@ -15,7 +15,9 @@
     <div id="footer-container">
       <footer id="footer">
         <?php do_action( 'pdxtheme_before_footer' ); ?>
-        <?php dynamic_sidebar( 'footer-widgets' ); ?>
+        <div id="global-footer" class="global-footer row">
+          <?php dynamic_sidebar( 'footer-widgets' ); ?>
+        </div>
         <?php do_action( 'pdxtheme_after_footer' ); ?>
       </footer>
     </div>
