@@ -50,7 +50,7 @@
     <header id="masthead" class="masthead" data-sticky data-options="marginTop: 0">
       <div class="masthead-inner row">
         <div class="columns medium-2 small-4 log-column" id="local-title">
-          <h1><a href="index.html" title="Back to [service-name] homepage"><img src="https://ebiwd.github.io/pdx-visual-framework/images/logo.png" class="padding-15"/></a></h1>
+          <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="Back to <?php bloginfo( 'name' ); ?> homepage"><img src="https://ebiwd.github.io/pdx-visual-framework/images/logo.png" class="padding-15"/></a></h1>
         </div>
         <!-- Desktop Menu-->
         <div class="columns medium-10 menu-column padding-vertical-30 hide-for-small-only" id="local-nav">
