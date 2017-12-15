@@ -10,7 +10,7 @@ get_header(); ?>
 
 <?php get_template_part( 'template-parts/featured-image' ); ?>
 
-<div id="single-post" role="main">
+<div id="single-post" role="main" class="row">
 
 <?php do_action( 'pdxtheme_before_content' ); ?>
 <?php while ( have_posts() ) : the_post(); ?>
