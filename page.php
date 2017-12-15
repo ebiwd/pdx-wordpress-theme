@@ -14,7 +14,7 @@
 
  <?php get_template_part( 'template-parts/featured-image' ); ?>
 
- <div id="page" role="main">
+ <div id="page" role="main" class="row">
 
  <?php do_action( 'pdxtheme_before_content' ); ?>
  <?php while ( have_posts() ) : the_post(); ?>
