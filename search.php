@@ -13,7 +13,7 @@ get_header(); ?>
 <?php do_action( 'pdxtheme_before_content' ); ?>
 
 <article <?php post_class('main-content') ?> id="search-results">
-	<header>
+  <header class="clearfix padding-top-medium padding-bottom-large">
 	    <h1 class="entry-title"><?php _e( 'Search Results for', 'pdxtheme' ); ?> "<?php echo get_search_query(); ?>"</h1>
 	</header>
 

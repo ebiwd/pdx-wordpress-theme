@@ -22,7 +22,7 @@ get_header(); ?>
   	);
   ?>
   <article <?php post_class($mainClasses) ?> id="post-<?php the_ID(); ?>">
-    <header>
+    <header class="clearfix padding-top-medium padding-bottom-large">
       <h2 class="entry-title"><?php the_title(); ?></h2>
       <?php pdxtheme_entry_meta(); ?>
     </header>
