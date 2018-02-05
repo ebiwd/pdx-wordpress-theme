@@ -18,6 +18,36 @@ function pdxtheme_sidebar_widgets() {
 	  'after_title' => '</h3>',
 	));
 
+  register_sidebar(array(
+	  'id' => 'content-bottom-widgets-left',
+	  'name' => __( 'Content bottom widgets (left)', 'pdxtheme' ),
+	  'description' => __( 'Drag widgets to this content bottom left container', 'pdxtheme' ),
+	  'before_widget' => '<article id="%1$s" class="widget %2$s">',
+	  'after_widget' => '</article>',
+	  'before_title' => '<h4>',
+	  'after_title' => '</h4>',
+	));
+
+  register_sidebar(array(
+	  'id' => 'content-bottom-widgets-centre',
+	  'name' => __( 'Content bottom widgets (centre)', 'pdxtheme' ),
+	  'description' => __( 'Drag widgets to this content bottom centre container', 'pdxtheme' ),
+	  'before_widget' => '<article id="%1$s" class="widget %2$s">',
+	  'after_widget' => '</article>',
+	  'before_title' => '<h4>',
+	  'after_title' => '</h4>',
+	));
+
+  register_sidebar(array(
+	  'id' => 'content-bottom-widgets-right',
+	  'name' => __( 'Content bottom widgets (right)', 'pdxtheme' ),
+	  'description' => __( 'Drag widgets to this content bottom right container', 'pdxtheme' ),
+	  'before_widget' => '<article id="%1$s" class="widget %2$s">',
+	  'after_widget' => '</article>',
+	  'before_title' => '<h4>',
+	  'after_title' => '</h4>',
+	));
+
 	register_sidebar(array(
 	  'id' => 'footer-widgets',
 	  'name' => __( 'Footer widgets', 'pdxtheme' ),

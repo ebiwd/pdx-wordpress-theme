@@ -11,6 +11,20 @@
 ?>
 
       </section>
+      <section class="background-color-dark-white margin-top-30">
+        <div id="content-bottom" class="content-bottom row">
+          <h2 class="uppercase margin-top-40 columns small-12 title-icon-updates">News and Events</h2>
+          <div class="columns medium-4 margin-top-large">
+            <?php dynamic_sidebar( 'content-bottom-widgets-left' ); ?>
+          </div>
+          <div class="columns medium-4 margin-top-large">
+            <?php dynamic_sidebar( 'content-bottom-widgets-centre' ); ?>
+          </div>
+          <div class="columns medium-4 margin-top-large">
+            <?php dynamic_sidebar( 'content-bottom-widgets-right' ); ?>
+          </div>
+        </div>
+      </section>
     </div>
     <div id="footer-container">
       <footer id="footer">
