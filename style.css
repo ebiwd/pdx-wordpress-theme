@@ -16,6 +16,10 @@ License URI:        http://www.opensource.org/licenses/mit-license.php
 /* correct crayon tables */
 table thead, table tbody, table tfoot { background: none; }
 
+/* No bullets for category lists in closure */
+div.content-bottom ul.category-posts-internal { margin: 0; }
+div.content-bottom ul.category-posts-internal  li.cat-post-item { list-style-type: none; }
+
 /* ----------------------------------------------------------------------------
 
   Unfortunately WordPress will require a style.css file
