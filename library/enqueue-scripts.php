@@ -15,6 +15,9 @@ if ( ! function_exists( 'pdxtheme_scripts' ) ) :
     wp_enqueue_style( 'theme-stylesheet', 'https://ebiwd.github.io/pdx-visual-framework/css/app.css', array(), '1.0', 'all' );
     wp_enqueue_style( 'font-stylesheet', 'https://ebi.emblstatic.net/web_guidelines/EBI-Icon-fonts/v1.2/fonts.css', array(), '1.2', 'all' );
 
+    wp_enqueue_style( 'main-styles' , get_template_directory_uri() . '/style.css', array(), filemtime(get_template_directory() . '/style.css'), false);
+
+
   	// Deregister the jquery version bundled with WordPress.
   	wp_deregister_script( 'jquery' );
 
