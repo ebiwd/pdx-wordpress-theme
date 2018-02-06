@@ -23,20 +23,23 @@ To use, make a new WordPress page and use the "menu only" template.
     <div class="columns medium-10 menu-column padding-vertical-30 hide-for-small-only" id="local-nav">
       <nav id="main-menu" class="navigation" role="navigation">
         <?php pdxtheme_top_bar_r(); ?>
-        <?php
-        //if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) :
-        ?>
-          <?php
-          //get_template_part( 'template-parts/mobile-top-bar' );
-          ?>
-        <?php
-      // endif;
-      ?>
       </nav>
     </div>
     <!-- Mobile Menu -->
-    <div class="columns small-4 show-for-small-only padding-vertical-15 text-right">
-      <a class="menu-toggle"><i class="icon icon-functional" data-icon="M" data-toggle data-responsive-toggle="expand-menu"></i></a>
+    <div class="columns small-8 show-for-small-only padding-vertical-15 text-right" data-responsive-toggle="mobile-menu" data-hide-for="medium">
+      <a class="menu-toggle"><i class="icon icon-functional" data-icon="M"  data-toggle="mobile-menu"></i></a>
+    </div>
+
+    <div class="columns">
+      <?php
+      if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) :
+      ?>
+        <?php
+        get_template_part( 'template-parts/mobile-top-bar' );
+        ?>
+      <?php
+      endif;
+      ?>
     </div>
   </div>
 </header>
