@@ -61,11 +61,11 @@
 
 
         <!-- Mobile Menu -->
-        <div class="columns small-4 show-for-small-only padding-vertical-15 text-right" data-responsive-toggle="mobile-menu" data-hide-for="medium">
+        <div class="columns small-8 show-for-small-only padding-vertical-15 text-right" data-responsive-toggle="mobile-menu" data-hide-for="medium">
           <a class="menu-toggle"><i class="icon icon-functional" data-icon="M"  data-toggle="mobile-menu"></i></a>
         </div>
 
-        <div class="clearfix">
+        <div class="columns">
           <?php
           if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) :
           ?>
