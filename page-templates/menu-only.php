@@ -12,9 +12,9 @@ To use, make a new WordPress page and use the "menu only" template.
 
 <?php get_template_part( 'template-parts/featured-image' ); ?>
 
-<div id="menu-only">
+<!-- <div id="menu-only"> -->
 
-<header id="masthead" class="masthead" data-sticky data-options="marginTop: 0">
+<!-- <header id="masthead" class="masthead" data-sticky data-options="marginTop: 0"> -->
   <div class="masthead-inner row">
     <div class="columns medium-2 small-4 log-column" id="local-title">
       <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="Back to <?php bloginfo( 'name' ); ?> homepage"><img src="https://ebiwd.github.io/pdx-visual-framework/images/logo.png" class="padding-15"/></a></h1>
@@ -42,8 +42,8 @@ To use, make a new WordPress page and use the "menu only" template.
       ?>
     </div>
   </div>
-</header>
+<!-- </header> -->
 
 <?php the_content(); ?>
 
-</div>
+<!-- </div> -->
