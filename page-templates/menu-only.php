@@ -30,7 +30,7 @@ To use, make a new WordPress page and use the "menu only" template.
       <a class="menu-toggle"><i class="icon icon-functional" data-icon="M"  data-toggle="mobile-menu"></i></a>
     </div>
 
-    <div class="columns">
+    <div class="columns show-for-small-only">
       <?php
       if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) :
       ?>
