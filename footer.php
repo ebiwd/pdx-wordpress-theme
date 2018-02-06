@@ -13,7 +13,7 @@
       </section>
       <section class="background-color-dark-white margin-top-30">
         <div id="content-bottom" class="content-bottom row">
-          <h2 class="uppercase margin-top-40 columns small-12 title-icon-updates">News and Events</h2>
+          <h2 class="uppercase margin-top-40 columns small-12 title-icon-updates"><span>News and Events</span></h2>
           <div class="columns medium-4 margin-top-large">
             <?php dynamic_sidebar( 'content-bottom-widgets-left' ); ?>
           </div>
