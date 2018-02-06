@@ -56,21 +56,29 @@
         <div class="columns medium-10 menu-column padding-vertical-30 hide-for-small-only" id="local-nav">
           <nav id="main-menu" class="navigation" role="navigation">
             <?php pdxtheme_top_bar_r(); ?>
-            <?php
-            if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) :
-            ?>
-              <?php
-              get_template_part( 'template-parts/mobile-top-bar' );
-              ?>
-            <?php
-          endif;
-          ?>
           </nav>
         </div>
+
+
+        <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+          <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+          <div class="title-bar-title">Menu</div>
+        </div>
+
         <!-- Mobile Menu -->
         <div class="columns small-4 show-for-small-only padding-vertical-15 text-right">
-          <a class="menu-toggle"><i class="icon icon-functional" data-icon="M" data-toggle data-responsive-toggle="expand-menu"></i></a>
+          <a class="menu-toggle"><i class="icon icon-functional" data-icon="M" data-toggle data-responsive-toggle="mobile-menu"></i></a>
         </div>
+        <?php
+        if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) :
+        ?>
+          <?php
+          get_template_part( 'template-parts/mobile-top-bar' );
+          ?>
+        <?php
+        endif;
+        ?>
+
       </div>
     </header>
   </div>
