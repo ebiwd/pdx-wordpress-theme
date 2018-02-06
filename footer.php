@@ -11,6 +11,7 @@
 ?>
 
       </section>
+      <?php if ( is_front_page() ) : ?>
       <section class="background-color-dark-white margin-top-30">
         <div id="content-bottom" class="content-bottom row">
           <h2 class="uppercase margin-top-40 columns small-12 title-icon-updates"><span>News and Events</span></h2>
@@ -25,6 +26,7 @@
           </div>
         </div>
       </section>
+      <?php endif; ?>
     </div>
     <div id="footer-container">
       <footer id="footer">
