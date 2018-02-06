@@ -57,13 +57,13 @@
           <nav id="main-menu" class="navigation" role="navigation">
             <?php pdxtheme_top_bar_r(); ?>
             <?php
-            //if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) :
+            if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) :
             ?>
               <?php
-              //get_template_part( 'template-parts/mobile-top-bar' );
+              get_template_part( 'template-parts/mobile-top-bar' );
               ?>
             <?php
-          // endif;
+          endif;
           ?>
           </nav>
         </div>
