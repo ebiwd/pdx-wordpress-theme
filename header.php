@@ -61,18 +61,21 @@
 
 
         <!-- Mobile Menu -->
-        <div class="columns small-4 show-for-small-only padding-vertical-15 text-right">
-          <a class="menu-toggle"><i class="icon icon-functional" data-icon="M" data-toggle data-responsive-toggle="mobile-menu"></i></a>
+        <div class="columns small-4 show-for-small-only padding-vertical-15 text-right" data-responsive-toggle="mobile-menu" data-hide-for="medium">
+          <a class="menu-toggle"><i class="icon icon-functional" data-icon="M"  data-toggle="mobile-menu"></i></a>
         </div>
-        <?php
-        if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) :
-        ?>
+
+        <div class="clearfix">
           <?php
-          get_template_part( 'template-parts/mobile-top-bar' );
+          if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) :
           ?>
-        <?php
-        endif;
-        ?>
+            <?php
+            get_template_part( 'template-parts/mobile-top-bar' );
+            ?>
+          <?php
+          endif;
+          ?>
+        </div>
 
       </div>
     </header>
