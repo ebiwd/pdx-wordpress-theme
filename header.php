@@ -60,11 +60,6 @@
         </div>
 
 
-        <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
-          <button class="menu-icon" type="button" data-toggle="example-menu"></button>
-          <div class="title-bar-title">Menu</div>
-        </div>
-
         <!-- Mobile Menu -->
         <div class="columns small-4 show-for-small-only padding-vertical-15 text-right">
           <a class="menu-toggle"><i class="icon icon-functional" data-icon="M" data-toggle data-responsive-toggle="mobile-menu"></i></a>
